@@ -1,0 +1,26 @@
+{% extends "base.html" %} 
+{% block title %}Последние обновления {% endblock %}
+
+{% block content %}
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Height</th>
+                <th scope="col">Hash</th>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Miner</th>
+                <th scope="col">Transactions</th>
+            </tr>
+        </thead>
+
+        {% for block in page %}
+            {% include "block_item.html" with block=block %}
+        {% endfor %}
+
+    </table>
+    {% if page.has_other_pages %}
+        {% include "paginator.html" with page_obj=page paginator=paginator%}
+    {% endif %}
+
+{% endblock %}

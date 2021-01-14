@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block content %}
+    <h2 class="text-center">Информация по блоку: {{ single_block.height }}</h2>
+
+    <table class="table table-dark">
+        <tr>
+            <th scope="row">Height</th>
+            <td>{{ single_block.height }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Hash</th>
+            <td>{{ single_block.haash }}</p></td>
+        </tr>
+        <tr>
+            <th scope="row">Timestamp</th>
+            <td>{{ single_block.timestamp }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Miner</th>
+            <td>{{ single_block.miner }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Transaction count</th>
+            <td>{{ single_block.transactionCount }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
