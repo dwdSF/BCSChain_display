@@ -20,7 +20,7 @@ class Block(models.Model):
         verbose_name='кол-во транзакций')
 
     def __str__(self):
-        return self._hash
+        return self.haash
 
     class Meta:
         ordering = ('-height',)
