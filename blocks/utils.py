@@ -1,10 +1,10 @@
-from blocks.models import Block
-
-import requests
-import logging
 import json
+import logging
 import time
 
+import requests
+
+from blocks.models import Block
 
 bcsblocks_url = 'https://bcschain.info/api/recent-blocks?count='
 bcsinfo_url = 'https://bcschain.info/api/info/'

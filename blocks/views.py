@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
+from django.shortcuts import get_object_or_404, render
 from django.views.decorators.cache import cache_page
 
 from .models import Block
