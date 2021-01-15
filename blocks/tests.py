@@ -6,7 +6,7 @@ from .models import Block
 
 class TestUserAction(TestCase):
     ''' !!!  Before running the tests
-         you need to comment out the add_blocks() in index function  !!! '''
+         you need to comment out the add_blocks() in the index function  !!! '''
 
     def setUp(self):
         self.client = Client()
