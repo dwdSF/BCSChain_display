@@ -13,7 +13,7 @@ source env\bin\activate
 ```shell
 pip3 install -r requirements.txt
 ```
-  - Установить PostgreSQL и ввести свои данные в настройках приложения
+  - Установить PostgreSQL и ввести свои данные бд в настройках приложения
 ```shell
 'NAME': '...',
 'USER': '...',
